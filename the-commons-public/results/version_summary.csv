@@ -1,0 +1,17 @@
+version,experiment,condition,child_or_agent_mean,grandchild_mean,notes
+v0.2,control,Isolation,9.0,,blinded model judge score out of 10; ceiling effect
+v0.2,control,Inherited Commons,9.0,,blinded model judge score out of 10; ceiling effect
+v0.2,control,Placebo Commons,9.0,,blinded model judge score out of 10; ceiling effect
+v0.3,artificial-world transfer,Isolation,0.480,,objective accuracy
+v0.3,artificial-world transfer,Inherited Commons,0.895,,objective accuracy
+v0.3,artificial-world transfer,Placebo Archive,0.515,,objective accuracy
+v0.4,bad ancestor,No Archive,0.729,0.781,single hidden world
+v0.4,bad ancestor,Correct Claim Only,0.979,0.979,single hidden world
+v0.4,bad ancestor,False Claim Only,0.635,0.708,single hidden world
+v0.4,bad ancestor,False Claim + Provenance,0.979,0.969,single hidden world
+v0.4,bad ancestor,Evidence Only,0.771,0.729,single hidden world
+v0.5,10-world replication,No Archive,0.920,0.721,semantic equivalence rate 0.000
+v0.5,10-world replication,Correct Claim Only,1.000,1.000,semantic equivalence rate 1.000
+v0.5,10-world replication,False Claim Only,0.752,0.692,semantic equivalence rate 0.000
+v0.5,10-world replication,False Claim + Provenance,0.900,0.933,semantic equivalence rate 0.800
+v0.5,10-world replication,Evidence Only,0.883,0.908,semantic equivalence rate 0.800
