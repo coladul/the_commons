@@ -1,0 +1,617 @@
+{
+  "artifact_checks": {
+    "checks": {
+      "run_order_has_each_trial_once": true,
+      "thirty_rendered_prompt_files": true,
+      "thirty_trials_built": true,
+      "world_file_authorizes_30_calls": true,
+      "world_file_exists": true,
+      "world_file_generation_count_one": true
+    },
+    "pass": true
+  },
+  "core_prompt_checks": [
+    {
+      "byte_lengths": {
+        "Full Reports - Provenance Masked": 2543,
+        "Full Reports - Shuffled Provenance": 2543,
+        "Full Reports - Valid Provenance": 2543
+      },
+      "calibration_table_sha256": "e864fb3939227295b571c5abde0d20482dfad9dee40f0839fb81ce7bb0652f54",
+      "canonical_prompt_sha256": "82baba16fd8bda4d7fa46e1f006e332f9a905be47738d453fd27940239756cac",
+      "character_lengths": {
+        "Full Reports - Provenance Masked": 2542,
+        "Full Reports - Shuffled Provenance": 2542,
+        "Full Reports - Valid Provenance": 2542
+      },
+      "checks": {
+        "byte_lengths_identical": true,
+        "calibration_identical_and_once": true,
+        "canonical_prompts_identical": true,
+        "character_lengths_identical": true,
+        "condition_names_absent_from_prompts": true,
+        "exactly_two_linkage_fields_each": true,
+        "false_claim_identical_and_once": true,
+        "false_claim_unattributed": true,
+        "masked_mapping_expected": true,
+        "new_evidence_identical": true,
+        "report_payloads_identical_and_once": true,
+        "shuffled_mapping_expected": true,
+        "system_instructions_identical": true,
+        "valid_mapping_expected": true,
+        "whitespace_token_counts_identical": true
+      },
+      "displayed_source_lines": {
+        "Full Reports - Provenance Masked": [
+          "SOURCE_X",
+          "SOURCE_X"
+        ],
+        "Full Reports - Shuffled Provenance": [
+          "SOURCE_B",
+          "SOURCE_A"
+        ],
+        "Full Reports - Valid Provenance": [
+          "SOURCE_A",
+          "SOURCE_B"
+        ]
+      },
+      "expected_shuffled_mapping": [
+        "SOURCE_B",
+        "SOURCE_A"
+      ],
+      "expected_valid_mapping": [
+        "SOURCE_A",
+        "SOURCE_B"
+      ],
+      "false_claim_block_sha256": "fc5b32717685c3579c7bb7f9b694ebb8665e3e42ff2f4c432416f0dc4941fd19",
+      "new_evidence_sha256": "fab69231b37cb094d55d843fcf8ddaf743ca00bb85dbe89ab6b2f5a94a6508b2",
+      "pass": true,
+      "prompt_sha256": {
+        "Full Reports - Provenance Masked": "3e75ab4b17b27514f42229d9eddc2b6cfe321f18a76339964daf4481e3b0caa0",
+        "Full Reports - Shuffled Provenance": "78b327bdfcb0d0fed511522d82692a8891ca12ed9f2e1d1d5bdaf2a249c7d88f",
+        "Full Reports - Valid Provenance": "8e74d5b482f23bd71b1ba311591287da3d104323a27e68c520b77d7e2be678c5"
+      },
+      "report_payload_sha256": {
+        "false_rule_report": "ed299f9ee92c1f592641d07d3bb1e6ad0048b268688193918a389c60bc1528d7",
+        "true_rule_report": "214798146f2335fe94fa304e31934fff3616ad893ae2f322604ccaa0a2768518"
+      },
+      "whitespace_token_counts": {
+        "Full Reports - Provenance Masked": 328,
+        "Full Reports - Shuffled Provenance": 328,
+        "Full Reports - Valid Provenance": 328
+      },
+      "world_id": "P01"
+    },
+    {
+      "byte_lengths": {
+        "Full Reports - Provenance Masked": 2545,
+        "Full Reports - Shuffled Provenance": 2545,
+        "Full Reports - Valid Provenance": 2545
+      },
+      "calibration_table_sha256": "44086eb71b3265c8678fe0e14fce56cd0d32f8bacd46cdb0437cfa50169f4281",
+      "canonical_prompt_sha256": "22e1a6f653fa1158a878ba37c32842bd0b95bc0ee860d2eef5ad9f5c0fd8819d",
+      "character_lengths": {
+        "Full Reports - Provenance Masked": 2544,
+        "Full Reports - Shuffled Provenance": 2544,
+        "Full Reports - Valid Provenance": 2544
+      },
+      "checks": {
+        "byte_lengths_identical": true,
+        "calibration_identical_and_once": true,
+        "canonical_prompts_identical": true,
+        "character_lengths_identical": true,
+        "condition_names_absent_from_prompts": true,
+        "exactly_two_linkage_fields_each": true,
+        "false_claim_identical_and_once": true,
+        "false_claim_unattributed": true,
+        "masked_mapping_expected": true,
+        "new_evidence_identical": true,
+        "report_payloads_identical_and_once": true,
+        "shuffled_mapping_expected": true,
+        "system_instructions_identical": true,
+        "valid_mapping_expected": true,
+        "whitespace_token_counts_identical": true
+      },
+      "displayed_source_lines": {
+        "Full Reports - Provenance Masked": [
+          "SOURCE_X",
+          "SOURCE_X"
+        ],
+        "Full Reports - Shuffled Provenance": [
+          "SOURCE_A",
+          "SOURCE_B"
+        ],
+        "Full Reports - Valid Provenance": [
+          "SOURCE_B",
+          "SOURCE_A"
+        ]
+      },
+      "expected_shuffled_mapping": [
+        "SOURCE_A",
+        "SOURCE_B"
+      ],
+      "expected_valid_mapping": [
+        "SOURCE_B",
+        "SOURCE_A"
+      ],
+      "false_claim_block_sha256": "fe8df7691a7bfeb01795ed749c82ab19b4711cd08bcb5fa5e44faee6ae1e2f5a",
+      "new_evidence_sha256": "43445a34b970143efb15f3d77e4c20210a10da86e55eb269fc44e778aa374347",
+      "pass": true,
+      "prompt_sha256": {
+        "Full Reports - Provenance Masked": "4220eedb76b7ba304330b1fda964e055156ec4f2f981614f9641c7a3c87ca5a0",
+        "Full Reports - Shuffled Provenance": "b584e09ddbab1baaf844daebb4cb80140cd04d6eede33d0f53b5f1200fcb75ac",
+        "Full Reports - Valid Provenance": "c5f4107a05213b6967295aadfcf063bb624c481807845793f010ec76b5ec4a7a"
+      },
+      "report_payload_sha256": {
+        "false_rule_report": "634f3247e403a5757d3c2ae38aa2b30ecb2fcf999c8895e2eb1b6b6bf5cecd57",
+        "true_rule_report": "f99879169fc60530a8e010ac92fa1953baaf786f3d14020cb831e6c559b63bc6"
+      },
+      "whitespace_token_counts": {
+        "Full Reports - Provenance Masked": 328,
+        "Full Reports - Shuffled Provenance": 328,
+        "Full Reports - Valid Provenance": 328
+      },
+      "world_id": "P02"
+    },
+    {
+      "byte_lengths": {
+        "Full Reports - Provenance Masked": 2543,
+        "Full Reports - Shuffled Provenance": 2543,
+        "Full Reports - Valid Provenance": 2543
+      },
+      "calibration_table_sha256": "e864fb3939227295b571c5abde0d20482dfad9dee40f0839fb81ce7bb0652f54",
+      "canonical_prompt_sha256": "e7498b576dfc33abaff911fd7ee9e5ef27abe6203e86ea6a28a2f541c608f3ba",
+      "character_lengths": {
+        "Full Reports - Provenance Masked": 2542,
+        "Full Reports - Shuffled Provenance": 2542,
+        "Full Reports - Valid Provenance": 2542
+      },
+      "checks": {
+        "byte_lengths_identical": true,
+        "calibration_identical_and_once": true,
+        "canonical_prompts_identical": true,
+        "character_lengths_identical": true,
+        "condition_names_absent_from_prompts": true,
+        "exactly_two_linkage_fields_each": true,
+        "false_claim_identical_and_once": true,
+        "false_claim_unattributed": true,
+        "masked_mapping_expected": true,
+        "new_evidence_identical": true,
+        "report_payloads_identical_and_once": true,
+        "shuffled_mapping_expected": true,
+        "system_instructions_identical": true,
+        "valid_mapping_expected": true,
+        "whitespace_token_counts_identical": true
+      },
+      "displayed_source_lines": {
+        "Full Reports - Provenance Masked": [
+          "SOURCE_X",
+          "SOURCE_X"
+        ],
+        "Full Reports - Shuffled Provenance": [
+          "SOURCE_A",
+          "SOURCE_B"
+        ],
+        "Full Reports - Valid Provenance": [
+          "SOURCE_B",
+          "SOURCE_A"
+        ]
+      },
+      "expected_shuffled_mapping": [
+        "SOURCE_A",
+        "SOURCE_B"
+      ],
+      "expected_valid_mapping": [
+        "SOURCE_B",
+        "SOURCE_A"
+      ],
+      "false_claim_block_sha256": "9c4f34a5f9175bb3eb03aab1ea632765d2391bd61e112e1bfee778892b091d60",
+      "new_evidence_sha256": "63fc605380d82ead06c93b78586412e4ecda68e472bf626b723daca162cf0677",
+      "pass": true,
+      "prompt_sha256": {
+        "Full Reports - Provenance Masked": "3b664eb43a1eae2a5419f618f8c0687fceb5f13e6d546dcbd1aee72cb943e518",
+        "Full Reports - Shuffled Provenance": "77b6ae49650c03024f8baf69b9ca0cdd839d6affe5a8623e36dd74f06f6c83f5",
+        "Full Reports - Valid Provenance": "187ef8120186be144366a06781ccda797216e7903b3e615cecdb543075b1099a"
+      },
+      "report_payload_sha256": {
+        "false_rule_report": "0696ecfd7089a01005952bf7172db02fe3c96cd094421ca6a7affd15a7e8fc3f",
+        "true_rule_report": "23710497bf060ac948093a53982df801f3b8035ab8639e6a0ea5e5fd8f21b133"
+      },
+      "whitespace_token_counts": {
+        "Full Reports - Provenance Masked": 328,
+        "Full Reports - Shuffled Provenance": 328,
+        "Full Reports - Valid Provenance": 328
+      },
+      "world_id": "P03"
+    },
+    {
+      "byte_lengths": {
+        "Full Reports - Provenance Masked": 2545,
+        "Full Reports - Shuffled Provenance": 2545,
+        "Full Reports - Valid Provenance": 2545
+      },
+      "calibration_table_sha256": "44086eb71b3265c8678fe0e14fce56cd0d32f8bacd46cdb0437cfa50169f4281",
+      "canonical_prompt_sha256": "9498516f45348404061446ec497a1aad37febbc0f789c8b6e4843a90c81f8799",
+      "character_lengths": {
+        "Full Reports - Provenance Masked": 2544,
+        "Full Reports - Shuffled Provenance": 2544,
+        "Full Reports - Valid Provenance": 2544
+      },
+      "checks": {
+        "byte_lengths_identical": true,
+        "calibration_identical_and_once": true,
+        "canonical_prompts_identical": true,
+        "character_lengths_identical": true,
+        "condition_names_absent_from_prompts": true,
+        "exactly_two_linkage_fields_each": true,
+        "false_claim_identical_and_once": true,
+        "false_claim_unattributed": true,
+        "masked_mapping_expected": true,
+        "new_evidence_identical": true,
+        "report_payloads_identical_and_once": true,
+        "shuffled_mapping_expected": true,
+        "system_instructions_identical": true,
+        "valid_mapping_expected": true,
+        "whitespace_token_counts_identical": true
+      },
+      "displayed_source_lines": {
+        "Full Reports - Provenance Masked": [
+          "SOURCE_X",
+          "SOURCE_X"
+        ],
+        "Full Reports - Shuffled Provenance": [
+          "SOURCE_B",
+          "SOURCE_A"
+        ],
+        "Full Reports - Valid Provenance": [
+          "SOURCE_A",
+          "SOURCE_B"
+        ]
+      },
+      "expected_shuffled_mapping": [
+        "SOURCE_B",
+        "SOURCE_A"
+      ],
+      "expected_valid_mapping": [
+        "SOURCE_A",
+        "SOURCE_B"
+      ],
+      "false_claim_block_sha256": "ec8f8b1e0b0c9b56f77ebb1db271b66a52dc946cea9db23d9b973a2fed1a7664",
+      "new_evidence_sha256": "3fddc1e27688d0b9979f5c3aa4e976b94bf45b79760484822ba750b658b24ccc",
+      "pass": true,
+      "prompt_sha256": {
+        "Full Reports - Provenance Masked": "56e72fd5a1c026ab7a6a060fb2af71d5e3f6fd7d98b4be214b1d17b69eb552f4",
+        "Full Reports - Shuffled Provenance": "ae2d155a63c60b4325ad99d8e2099e16a253d561c7064ebda7b902539fdc83fb",
+        "Full Reports - Valid Provenance": "e7b6c0ee0da0896e6775b525173a43c6b76e5bc0b3854fdb6fe5f2384964fdfb"
+      },
+      "report_payload_sha256": {
+        "false_rule_report": "488d185eba83958aca8af17461c226da7fa5258fda3ce1af415ce314db0a237f",
+        "true_rule_report": "5e2145b473644d75a186647068077b058db6124b40907fcbb71c32d42bc8c578"
+      },
+      "whitespace_token_counts": {
+        "Full Reports - Provenance Masked": 328,
+        "Full Reports - Shuffled Provenance": 328,
+        "Full Reports - Valid Provenance": 328
+      },
+      "world_id": "P04"
+    },
+    {
+      "byte_lengths": {
+        "Full Reports - Provenance Masked": 2543,
+        "Full Reports - Shuffled Provenance": 2543,
+        "Full Reports - Valid Provenance": 2543
+      },
+      "calibration_table_sha256": "e864fb3939227295b571c5abde0d20482dfad9dee40f0839fb81ce7bb0652f54",
+      "canonical_prompt_sha256": "173087a27dcd48ec84eedb701bdd50e1487c403fa41055281e68fc4205315e7f",
+      "character_lengths": {
+        "Full Reports - Provenance Masked": 2542,
+        "Full Reports - Shuffled Provenance": 2542,
+        "Full Reports - Valid Provenance": 2542
+      },
+      "checks": {
+        "byte_lengths_identical": true,
+        "calibration_identical_and_once": true,
+        "canonical_prompts_identical": true,
+        "character_lengths_identical": true,
+        "condition_names_absent_from_prompts": true,
+        "exactly_two_linkage_fields_each": true,
+        "false_claim_identical_and_once": true,
+        "false_claim_unattributed": true,
+        "masked_mapping_expected": true,
+        "new_evidence_identical": true,
+        "report_payloads_identical_and_once": true,
+        "shuffled_mapping_expected": true,
+        "system_instructions_identical": true,
+        "valid_mapping_expected": true,
+        "whitespace_token_counts_identical": true
+      },
+      "displayed_source_lines": {
+        "Full Reports - Provenance Masked": [
+          "SOURCE_X",
+          "SOURCE_X"
+        ],
+        "Full Reports - Shuffled Provenance": [
+          "SOURCE_B",
+          "SOURCE_A"
+        ],
+        "Full Reports - Valid Provenance": [
+          "SOURCE_A",
+          "SOURCE_B"
+        ]
+      },
+      "expected_shuffled_mapping": [
+        "SOURCE_B",
+        "SOURCE_A"
+      ],
+      "expected_valid_mapping": [
+        "SOURCE_A",
+        "SOURCE_B"
+      ],
+      "false_claim_block_sha256": "6aa89632740f32b38abaa8998719220815c589795010a703f2395271138b950e",
+      "new_evidence_sha256": "fb0314d5f0680835ee9ed862beff2cfe5c2ef8059323250c3a7b172aa3b9195b",
+      "pass": true,
+      "prompt_sha256": {
+        "Full Reports - Provenance Masked": "9c764108644f030807498d1d0888a383a66bd8db068d62eeaf8e991ddd4882ef",
+        "Full Reports - Shuffled Provenance": "7000864048b345a56129772f91653d5eb19ef0536d350540c8ab734ded97455c",
+        "Full Reports - Valid Provenance": "05113a0891a4d74badd686fe34b6a43a7665db821c0724c092768184991ca5aa"
+      },
+      "report_payload_sha256": {
+        "false_rule_report": "e13f8b830755bc405ed3246e64d4f320874578e4597b99ab089ef5a7071b1636",
+        "true_rule_report": "83cf082aff15c4a76c6335eb62bfbccccf257615598a7e80ef03c89d004f20b8"
+      },
+      "whitespace_token_counts": {
+        "Full Reports - Provenance Masked": 328,
+        "Full Reports - Shuffled Provenance": 328,
+        "Full Reports - Valid Provenance": 328
+      },
+      "world_id": "P05"
+    }
+  ],
+  "counterbalancing": {
+    "checks": {
+      "all_source_order_combinations_covered": true,
+      "packet_order_counterbalanced": true,
+      "reliable_source_counterbalanced": true,
+      "valid_first_source_counterbalanced": true
+    },
+    "false_packet_first": 2,
+    "pass": true,
+    "reliable_source_counts": {
+      "SOURCE_A": 3,
+      "SOURCE_B": 2
+    },
+    "source_order_combinations": [
+      [
+        "SOURCE_A",
+        "false_rule_report"
+      ],
+      [
+        "SOURCE_A",
+        "true_rule_report"
+      ],
+      [
+        "SOURCE_B",
+        "false_rule_report"
+      ],
+      [
+        "SOURCE_B",
+        "true_rule_report"
+      ]
+    ],
+    "true_packet_first": 3,
+    "valid_first_source_counts": {
+      "SOURCE_A": 3,
+      "SOURCE_B": 2
+    }
+  },
+  "experiment": "The Commons v0.6 Source-Linkage Test",
+  "frozen_worlds_sha256": "aa5d8bed3448d11924321012d4eca3518acfe55011038e03e31c24fede49e5c9",
+  "historical_v0_1_to_v0_5": {
+    "files": [
+      {
+        "actual_sha256": "68ee88a50118705c7a604cb0aa22b85587bc16f0f13d9a859f2b11c7733f500d",
+        "expected_sha256": "68ee88a50118705c7a604cb0aa22b85587bc16f0f13d9a859f2b11c7733f500d",
+        "file": "the_commons.py",
+        "pass": true
+      },
+      {
+        "actual_sha256": "5bea8703a575a82607d20fb8760fe8960fa3948a447a0ba298f3509fa9ad54aa",
+        "expected_sha256": "5bea8703a575a82607d20fb8760fe8960fa3948a447a0ba298f3509fa9ad54aa",
+        "file": "the_commons_v0_2.py",
+        "pass": true
+      },
+      {
+        "actual_sha256": "b9995686233dd50ac7ac2141ac8cc8bd2e07267a32ec64a988791a09fde988a6",
+        "expected_sha256": "b9995686233dd50ac7ac2141ac8cc8bd2e07267a32ec64a988791a09fde988a6",
+        "file": "the_commons_v0_3.py",
+        "pass": true
+      },
+      {
+        "actual_sha256": "12a08b4452eea62c8baaee257cce429a027d98dd9050a5a10300919add0adbf5",
+        "expected_sha256": "12a08b4452eea62c8baaee257cce429a027d98dd9050a5a10300919add0adbf5",
+        "file": "the_commons_v0_4.py",
+        "pass": true
+      },
+      {
+        "actual_sha256": "24e0b1eec73288e2b72ae092136df57df7b1061727ee37a0aa10cd92ef140246",
+        "expected_sha256": "24e0b1eec73288e2b72ae092136df57df7b1061727ee37a0aa10cd92ef140246",
+        "file": "the_commons_v0_5.py",
+        "pass": true
+      }
+    ],
+    "pass": true
+  },
+  "overall_pass": true,
+  "phase": "five-world engineering pilot",
+  "script_sha256_at_validation": "1a4ea925d581a62984e6f8fde67bda4c7bea4c9f78d17d6d8fe17d0fe041d01e",
+  "tokenizer_check": {
+    "available": true,
+    "by_world": {
+      "P01": {
+        "counts": {
+          "Full Reports - Provenance Masked": 540,
+          "Full Reports - Shuffled Provenance": 540,
+          "Full Reports - Valid Provenance": 540
+        },
+        "pass": true
+      },
+      "P02": {
+        "counts": {
+          "Full Reports - Provenance Masked": 540,
+          "Full Reports - Shuffled Provenance": 540,
+          "Full Reports - Valid Provenance": 540
+        },
+        "pass": true
+      },
+      "P03": {
+        "counts": {
+          "Full Reports - Provenance Masked": 540,
+          "Full Reports - Shuffled Provenance": 540,
+          "Full Reports - Valid Provenance": 540
+        },
+        "pass": true
+      },
+      "P04": {
+        "counts": {
+          "Full Reports - Provenance Masked": 540,
+          "Full Reports - Shuffled Provenance": 540,
+          "Full Reports - Valid Provenance": 540
+        },
+        "pass": true
+      },
+      "P05": {
+        "counts": {
+          "Full Reports - Provenance Masked": 540,
+          "Full Reports - Shuffled Provenance": 540,
+          "Full Reports - Valid Provenance": 540
+        },
+        "pass": true
+      }
+    },
+    "encoding": "o200k_base fallback",
+    "pass": true
+  },
+  "validated_at": "2026-08-16T04:21:54.574160+00:00",
+  "world_checks": [
+    {
+      "checks": {
+        "eight_rows_per_report": true,
+        "matched_report_inputs": true,
+        "new_evidence_has_six_rows": true,
+        "packet_kinds_once_each": true,
+        "reliable_calibration_score": true,
+        "reports_conflict_on_diagnostic_rows": true,
+        "source_ids_distinct": true,
+        "sources_valid": true,
+        "weaker_calibration_score": true
+      },
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "pass": true,
+      "reliable_calibration_correct": 7,
+      "reliable_source": "SOURCE_A",
+      "report_disagreements": 4,
+      "weaker_calibration_correct": 3,
+      "weaker_source": "SOURCE_B",
+      "world_id": "P01"
+    },
+    {
+      "checks": {
+        "eight_rows_per_report": true,
+        "matched_report_inputs": true,
+        "new_evidence_has_six_rows": true,
+        "packet_kinds_once_each": true,
+        "reliable_calibration_score": true,
+        "reports_conflict_on_diagnostic_rows": true,
+        "source_ids_distinct": true,
+        "sources_valid": true,
+        "weaker_calibration_score": true
+      },
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "pass": true,
+      "reliable_calibration_correct": 7,
+      "reliable_source": "SOURCE_B",
+      "report_disagreements": 4,
+      "weaker_calibration_correct": 3,
+      "weaker_source": "SOURCE_A",
+      "world_id": "P02"
+    },
+    {
+      "checks": {
+        "eight_rows_per_report": true,
+        "matched_report_inputs": true,
+        "new_evidence_has_six_rows": true,
+        "packet_kinds_once_each": true,
+        "reliable_calibration_score": true,
+        "reports_conflict_on_diagnostic_rows": true,
+        "source_ids_distinct": true,
+        "sources_valid": true,
+        "weaker_calibration_score": true
+      },
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "pass": true,
+      "reliable_calibration_correct": 7,
+      "reliable_source": "SOURCE_A",
+      "report_disagreements": 4,
+      "weaker_calibration_correct": 3,
+      "weaker_source": "SOURCE_B",
+      "world_id": "P03"
+    },
+    {
+      "checks": {
+        "eight_rows_per_report": true,
+        "matched_report_inputs": true,
+        "new_evidence_has_six_rows": true,
+        "packet_kinds_once_each": true,
+        "reliable_calibration_score": true,
+        "reports_conflict_on_diagnostic_rows": true,
+        "source_ids_distinct": true,
+        "sources_valid": true,
+        "weaker_calibration_score": true
+      },
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "pass": true,
+      "reliable_calibration_correct": 7,
+      "reliable_source": "SOURCE_B",
+      "report_disagreements": 4,
+      "weaker_calibration_correct": 3,
+      "weaker_source": "SOURCE_A",
+      "world_id": "P04"
+    },
+    {
+      "checks": {
+        "eight_rows_per_report": true,
+        "matched_report_inputs": true,
+        "new_evidence_has_six_rows": true,
+        "packet_kinds_once_each": true,
+        "reliable_calibration_score": true,
+        "reports_conflict_on_diagnostic_rows": true,
+        "source_ids_distinct": true,
+        "sources_valid": true,
+        "weaker_calibration_score": true
+      },
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "pass": true,
+      "reliable_calibration_correct": 7,
+      "reliable_source": "SOURCE_A",
+      "report_disagreements": 4,
+      "weaker_calibration_correct": 3,
+      "weaker_source": "SOURCE_B",
+      "world_id": "P05"
+    }
+  ]
+}

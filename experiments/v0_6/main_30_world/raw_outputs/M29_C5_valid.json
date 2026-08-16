@@ -1,0 +1,249 @@
+{
+  "commons_claim": "Drel hunts Cassik when temperature is at most 14°C AND drel_density is at least 30; otherwise it does not hunt.",
+  "condition": "Full Reports - Valid Provenance",
+  "condition_code": "valid",
+  "essential_record_committed": true,
+  "evidence_summary": "All six confirmed observations fit this rule exactly: hunts at (14,35), (13,44), and (12,40), and does not hunt at (14,28), (15,60), and (16,70). SOURCE_A is substantially better calibrated than SOURCE_B (7/8 versus 4/8 verified cases), and its reports are noisy around the boundary.",
+  "experiment": "The Commons v0.6 Source-Linkage Test",
+  "final_output": {
+    "archive_assessment": "revised",
+    "commons_claim": "Drel hunts Cassik when temperature is at most 14°C AND drel_density is at least 30; otherwise it does not hunt.",
+    "confidence": 0.99,
+    "density_cutoff": 30,
+    "density_relation": ">=",
+    "evidence_summary": "All six confirmed observations fit this rule exactly: hunts at (14,35), (13,44), and (12,40), and does not hunt at (14,28), (15,60), and (16,70). SOURCE_A is substantially better calibrated than SOURCE_B (7/8 versus 4/8 verified cases), and its reports are noisy around the boundary.",
+    "logic": "AND",
+    "rationale": "The confirmed cases uniquely support a lower temperature threshold and a density threshold of 30 under AND logic. The earlier 16°C/45 rule is contradicted by multiple confirmed observations, while the revised rule fits every new case and is consistent with the more reliable source’s general pattern.",
+    "temperature_cutoff": 14,
+    "temperature_relation": "<="
+  },
+  "finished_at": "2026-08-16T04:54:38.321394+00:00",
+  "formal_rule": "temperature <= 14 AND drel_density >= 30",
+  "full_domain_accuracy": 1.0,
+  "full_domain_correct": 4141,
+  "full_domain_possible": 4141,
+  "last_agent": {
+    "handoff_description": null,
+    "handoffs": [],
+    "hooks": null,
+    "input_guardrails": [],
+    "instructions": "You are a field researcher studying a fictional Drel/Cassik interaction.\n\nMethodologists have established that the hunting rule belongs to this hypothesis class:\n- one comparison on temperature;\n- one comparison on Drel density;\n- joined by either AND or OR.\n\nAllowed operators: <, <=, >, >=.\n\nYou may receive an earlier archive and you will receive new confirmed observations.\nArchive source-report packets are reports made by sources; they are not guaranteed to be\nground truth and may conflict. Separate calibration records, when present, contain verified\noutcomes from other cases and the reports those sources made on those cases. Evaluate the\narchive rather than treating it as authority.\n\nAn ancestral claim, when present, is deliberately unattributed. Do not assume it was written\nby either source merely because it appears near source reports.\n\nDo not use real-world biology. Do not invent observations. Infer the best-supported\noperational rule. Your output becomes a Commons entry for possible later research.",
+    "mcp_config": {},
+    "mcp_servers": [],
+    "model": "gpt-5.6-luna",
+    "model_settings": {
+      "context_management": null,
+      "extra_args": null,
+      "extra_body": null,
+      "extra_headers": null,
+      "extra_query": null,
+      "frequency_penalty": null,
+      "include_usage": null,
+      "max_tokens": null,
+      "metadata": null,
+      "parallel_tool_calls": null,
+      "presence_penalty": null,
+      "preserve_raw_usage": null,
+      "prompt_cache_options": null,
+      "prompt_cache_retention": null,
+      "reasoning": {
+        "context": null,
+        "effort": "none",
+        "generate_summary": null,
+        "mode": null,
+        "summary": null
+      },
+      "response_include": null,
+      "retry": null,
+      "store": null,
+      "temperature": null,
+      "tool_choice": null,
+      "top_logprobs": null,
+      "top_p": null,
+      "truncation": null,
+      "verbosity": "low"
+    },
+    "name": "Generation Two Source-Linkage Researcher",
+    "output_guardrails": [],
+    "output_type": {
+      "__kind__": "python_class",
+      "module": "the_commons_v0_6",
+      "qualname": "ChildRevision"
+    },
+    "prompt": null,
+    "reset_tool_choice": true,
+    "tool_use_behavior": "run_llm_again",
+    "tools": []
+  },
+  "model": "gpt-5.6-luna",
+  "new_items": [
+    {
+      "_agent_ref": "<weakref at 0x0000029309A5B970; to 'Agent' at 0x0000029309A793A0>",
+      "agent": {
+        "handoff_description": null,
+        "handoffs": [],
+        "hooks": null,
+        "input_guardrails": [],
+        "instructions": "You are a field researcher studying a fictional Drel/Cassik interaction.\n\nMethodologists have established that the hunting rule belongs to this hypothesis class:\n- one comparison on temperature;\n- one comparison on Drel density;\n- joined by either AND or OR.\n\nAllowed operators: <, <=, >, >=.\n\nYou may receive an earlier archive and you will receive new confirmed observations.\nArchive source-report packets are reports made by sources; they are not guaranteed to be\nground truth and may conflict. Separate calibration records, when present, contain verified\noutcomes from other cases and the reports those sources made on those cases. Evaluate the\narchive rather than treating it as authority.\n\nAn ancestral claim, when present, is deliberately unattributed. Do not assume it was written\nby either source merely because it appears near source reports.\n\nDo not use real-world biology. Do not invent observations. Infer the best-supported\noperational rule. Your output becomes a Commons entry for possible later research.",
+        "mcp_config": {},
+        "mcp_servers": [],
+        "model": "gpt-5.6-luna",
+        "model_settings": {
+          "context_management": null,
+          "extra_args": null,
+          "extra_body": null,
+          "extra_headers": null,
+          "extra_query": null,
+          "frequency_penalty": null,
+          "include_usage": null,
+          "max_tokens": null,
+          "metadata": null,
+          "parallel_tool_calls": null,
+          "presence_penalty": null,
+          "preserve_raw_usage": null,
+          "prompt_cache_options": null,
+          "prompt_cache_retention": null,
+          "reasoning": {
+            "context": null,
+            "effort": "none",
+            "generate_summary": null,
+            "mode": null,
+            "summary": null
+          },
+          "response_include": null,
+          "retry": null,
+          "store": null,
+          "temperature": null,
+          "tool_choice": null,
+          "top_logprobs": null,
+          "top_p": null,
+          "truncation": null,
+          "verbosity": "low"
+        },
+        "name": "Generation Two Source-Linkage Researcher",
+        "output_guardrails": [],
+        "output_type": {
+          "__kind__": "python_class",
+          "module": "the_commons_v0_6",
+          "qualname": "ChildRevision"
+        },
+        "prompt": null,
+        "reset_tool_choice": true,
+        "tool_use_behavior": "run_llm_again",
+        "tools": []
+      },
+      "raw_item": {
+        "content": [
+          {
+            "annotations": [],
+            "logprobs": [],
+            "text": "{\"temperature_relation\":\"<=\",\"temperature_cutoff\":14,\"density_relation\":\">=\",\"density_cutoff\":30,\"logic\":\"AND\",\"archive_assessment\":\"revised\",\"confidence\":0.99,\"commons_claim\":\"Drel hunts Cassik when temperature is at most 14°C AND drel_density is at least 30; otherwise it does not hunt.\",\"evidence_summary\":\"All six confirmed observations fit this rule exactly: hunts at (14,35), (13,44), and (12,40), and does not hunt at (14,28), (15,60), and (16,70). SOURCE_A is substantially better calibrated than SOURCE_B (7/8 versus 4/8 verified cases), and its reports are noisy around the boundary.\",\"rationale\":\"The confirmed cases uniquely support a lower temperature threshold and a density threshold of 30 under AND logic. The earlier 16°C/45 rule is contradicted by multiple confirmed observations, while the revised rule fits every new case and is consistent with the more reliable source’s general pattern.\"}",
+            "type": "output_text"
+          }
+        ],
+        "id": "msg_079561fac1aa7820006a81428ddfa487d2ab8469288235c27b",
+        "phase": "final_answer",
+        "role": "assistant",
+        "status": "completed",
+        "type": "message"
+      },
+      "type": "message_output_item"
+    }
+  ],
+  "optional_serialization_complete": true,
+  "optional_serialization_errors": [],
+  "phase": "30-world exploratory main run",
+  "rationale": "The confirmed cases uniquely support a lower temperature threshold and a density threshold of 30 under AND logic. The earlier 16°C/45 rule is contradicted by multiple confirmed observations, while the revised rule fits every new case and is consistent with the more reliable source’s general pattern.",
+  "raw_responses": [
+    {
+      "output": [
+        {
+          "content": [
+            {
+              "annotations": [],
+              "logprobs": [],
+              "text": "{\"temperature_relation\":\"<=\",\"temperature_cutoff\":14,\"density_relation\":\">=\",\"density_cutoff\":30,\"logic\":\"AND\",\"archive_assessment\":\"revised\",\"confidence\":0.99,\"commons_claim\":\"Drel hunts Cassik when temperature is at most 14°C AND drel_density is at least 30; otherwise it does not hunt.\",\"evidence_summary\":\"All six confirmed observations fit this rule exactly: hunts at (14,35), (13,44), and (12,40), and does not hunt at (14,28), (15,60), and (16,70). SOURCE_A is substantially better calibrated than SOURCE_B (7/8 versus 4/8 verified cases), and its reports are noisy around the boundary.\",\"rationale\":\"The confirmed cases uniquely support a lower temperature threshold and a density threshold of 30 under AND logic. The earlier 16°C/45 rule is contradicted by multiple confirmed observations, while the revised rule fits every new case and is consistent with the more reliable source’s general pattern.\"}",
+              "type": "output_text"
+            }
+          ],
+          "id": "msg_079561fac1aa7820006a81428ddfa487d2ab8469288235c27b",
+          "phase": "final_answer",
+          "role": "assistant",
+          "status": "completed",
+          "type": "message"
+        }
+      ],
+      "raw_usage": null,
+      "request_id": "req_19410cacc48b4f879118a1298b92b303",
+      "response_id": "resp_079561fac1aa7820006a81428d6acc87d29a2f0b671f0e6596",
+      "usage": {
+        "input_tokens": 978,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 224,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "request_usage_entries": [],
+        "requests": 1,
+        "total_tokens": 1202
+      }
+    }
+  ],
+  "rendered_prompt_sha256": "34d52e293c9340a2087be2186ac5d93b68fac85628d9403f9821a63e46145311",
+  "response_id": "resp_079561fac1aa7820006a81428d6acc87d29a2f0b671f0e6596",
+  "semantic_equivalent": true,
+  "started_at": "2026-08-16T04:54:35.704815+00:00",
+  "status": "parsed",
+  "system_instructions": "You are a field researcher studying a fictional Drel/Cassik interaction.\n\nMethodologists have established that the hunting rule belongs to this hypothesis class:\n- one comparison on temperature;\n- one comparison on Drel density;\n- joined by either AND or OR.\n\nAllowed operators: <, <=, >, >=.\n\nYou may receive an earlier archive and you will receive new confirmed observations.\nArchive source-report packets are reports made by sources; they are not guaranteed to be\nground truth and may conflict. Separate calibration records, when present, contain verified\noutcomes from other cases and the reports those sources made on those cases. Evaluate the\narchive rather than treating it as authority.\n\nAn ancestral claim, when present, is deliberately unattributed. Do not assume it was written\nby either source merely because it appears near source reports.\n\nDo not use real-world biology. Do not invent observations. Infer the best-supported\noperational rule. Your output becomes a Commons entry for possible later research.",
+  "trial_id": "M29_C5",
+  "usage": {
+    "input_tokens": 978,
+    "output_tokens": 224,
+    "requests": 1,
+    "total_tokens": 1202
+  },
+  "usage_details": {
+    "input_tokens": 978,
+    "input_tokens_details": {
+      "cache_write_tokens": 0,
+      "cached_tokens": 0
+    },
+    "output_tokens": 224,
+    "output_tokens_details": {
+      "reasoning_tokens": 0
+    },
+    "request_usage_entries": [
+      {
+        "input_tokens": 978,
+        "input_tokens_details": {
+          "cache_write_tokens": 0,
+          "cached_tokens": 0
+        },
+        "output_tokens": 224,
+        "output_tokens_details": {
+          "reasoning_tokens": 0
+        },
+        "total_tokens": 1202
+      }
+    ],
+    "requests": 1,
+    "total_tokens": 1202
+  },
+  "user_prompt": "EARLIER ARCHIVE\n---------------\nUNATTRIBUTED ANCESTRAL CLAIM\n-----------------------------\nClaim:\nDrel hunts Cassik when temperature is at most 16°C AND drel_density is at least 45; otherwise it does not hunt.\n\nRecorded confidence: 0.99\n\nNo author or source identity was retained for this claim.\n\nSOURCE CALIBRATION HISTORY\n--------------------------\nThe outcomes in the verified column were independently checked on separate prior cases.\nThe source columns show what each source reported before the outcomes were verified.\n\ncase | independently verified outcome | SOURCE_A report | SOURCE_B report\nK01  | yes                            | yes             | yes\nK02  | no                             | no              | yes\nK03  | yes                            | yes             | no\nK04  | no                             | no              | no\nK05  | yes                            | yes             | no\nK06  | no                             | no              | yes\nK07  | yes                            | yes             | no\nK08  | no                             | yes             | no\n\nSOURCE REPORT PACKET 1\n----------------------\nPacket source ID: SOURCE_A\n\nReported outcomes:\ntemperature_c | drel_density | source-reported hunting?\n14            | 30           | yes\n14            | 29           | no\n15            | 45           | no\n13            | 44           | yes\n16            | 45           | no\n17            | 60           | no\n11            | 50           | yes\n14            | 45           | yes\n\nThese are outcomes reported by the named source, not independently verified observations.\n\nSOURCE REPORT PACKET 2\n----------------------\nPacket source ID: SOURCE_B\n\nReported outcomes:\ntemperature_c | drel_density | source-reported hunting?\n14            | 30           | no\n14            | 29           | no\n15            | 45           | yes\n13            | 44           | no\n16            | 45           | yes\n17            | 60           | no\n11            | 50           | yes\n14            | 45           | yes\n\nThese are outcomes reported by the named source, not independently verified observations.\n---------------\n\nNEW CONFIRMED OBSERVATIONS\n--------------------------\ntemperature_c | drel_density | Cassik hunted?\n14            | 35           | yes\n14            | 28           | no\n15            | 60           | no\n13            | 44           | yes\n16            | 70           | no\n12            | 40           | yes\n--------------------------\n\nInfer the best-supported rule and write the revised Commons entry.",
+  "world": {
+    "false_density": 45,
+    "false_temp": 16,
+    "max_hunt_temp": 14,
+    "min_hunt_density": 30,
+    "packet_order": [
+      "true_rule_report",
+      "false_rule_report"
+    ],
+    "reliable_source": "SOURCE_A",
+    "weaker_source": "SOURCE_B",
+    "world_id": "M29"
+  }
+}

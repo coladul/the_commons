@@ -1,0 +1,30 @@
+{
+  "condition": "False Claim Only",
+  "condition_code": "false_claim_only",
+  "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+  "error_type": "TypeError",
+  "experiment": "The Commons v0.6 Source-Linkage Test",
+  "finished_at": "2026-08-16T04:23:06.565069+00:00",
+  "model": "gpt-5.6-luna",
+  "phase": "five-world engineering pilot",
+  "rendered_prompt_sha256": "88a17f0d2edba2b58b270c0c2b7039d1f6d5608a182c98196498bad541ceaf25",
+  "started_at": "2026-08-16T04:23:04.441910+00:00",
+  "status": "error",
+  "system_instructions": "You are a field researcher studying a fictional Drel/Cassik interaction.\n\nMethodologists have established that the hunting rule belongs to this hypothesis class:\n- one comparison on temperature;\n- one comparison on Drel density;\n- joined by either AND or OR.\n\nAllowed operators: <, <=, >, >=.\n\nYou may receive an earlier archive and you will receive new confirmed observations.\nArchive source-report packets are reports made by sources; they are not guaranteed to be\nground truth and may conflict. Separate calibration records, when present, contain verified\noutcomes from other cases and the reports those sources made on those cases. Evaluate the\narchive rather than treating it as authority.\n\nAn ancestral claim, when present, is deliberately unattributed. Do not assume it was written\nby either source merely because it appears near source reports.\n\nDo not use real-world biology. Do not invent observations. Infer the best-supported\noperational rule. Your output becomes a Commons entry for possible later research.",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\Administrator\\Desktop\\the-commons-public\\the_commons_v0_6.py\", line 1026, in to_jsonable\n    return to_jsonable(model_dump(mode=\"json\"), depth + 1)\n                       ^^^^^^^^^^^^^^^^^^^^^^^\nTypeError: BaseModel.model_dump() missing 1 required positional argument: 'self'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"C:\\Users\\Administrator\\Desktop\\the-commons-public\\the_commons_v0_6.py\", line 1185, in run_pilot\n    \"new_items\": to_jsonable(getattr(result, \"new_items\", None)),\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Administrator\\Desktop\\the-commons-public\\the_commons_v0_6.py\", line 1022, in to_jsonable\n    return [to_jsonable(v, depth + 1) for v in value]\n            ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Administrator\\Desktop\\the-commons-public\\the_commons_v0_6.py\", line 1018, in to_jsonable\n    return to_jsonable(dataclasses.asdict(value), depth + 1)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Administrator\\Desktop\\the-commons-public\\the_commons_v0_6.py\", line 1020, in to_jsonable\n    return {str(k): to_jsonable(v, depth + 1) for k, v in value.items()}\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Administrator\\Desktop\\the-commons-public\\the_commons_v0_6.py\", line 1020, in to_jsonable\n    return {str(k): to_jsonable(v, depth + 1) for k, v in value.items()}\n                    ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Administrator\\Desktop\\the-commons-public\\the_commons_v0_6.py\", line 1028, in to_jsonable\n    return to_jsonable(model_dump(), depth + 1)\n                       ^^^^^^^^^^^^\nTypeError: BaseModel.model_dump() missing 1 required positional argument: 'self'\n",
+  "trial_id": "P02_C3",
+  "user_prompt": "EARLIER ARCHIVE\n---------------\nUNATTRIBUTED ANCESTRAL CLAIM\n-----------------------------\nClaim:\nDrel hunts Cassik when temperature is at most 17°C AND drel_density is at least 40; otherwise it does not hunt.\n\nRecorded confidence: 0.99\n\nNo author or source identity was retained for this claim.\n---------------\n\nNEW CONFIRMED OBSERVATIONS\n--------------------------\ntemperature_c | drel_density | Cassik hunted?\n15            | 30           | yes\n15            | 23           | no\n16            | 55           | no\n14            | 39           | yes\n17            | 65           | no\n13            | 35           | yes\n--------------------------\n\nInfer the best-supported rule and write the revised Commons entry.",
+  "world": {
+    "false_density": 40,
+    "false_temp": 17,
+    "max_hunt_temp": 15,
+    "min_hunt_density": 25,
+    "packet_order": [
+      "true_rule_report",
+      "false_rule_report"
+    ],
+    "reliable_source": "SOURCE_B",
+    "weaker_source": "SOURCE_A",
+    "world_id": "P02"
+  }
+}

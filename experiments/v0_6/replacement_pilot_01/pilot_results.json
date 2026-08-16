@@ -1,0 +1,680 @@
+{
+  "api_usage": {
+    "input_tokens": 23380,
+    "output_tokens": 5467,
+    "requests": 30,
+    "total_tokens": 28847
+  },
+  "authorized_api_calls": 30,
+  "condition_summaries": {
+    "Correct Claim Only": {
+      "mean_full_domain_accuracy": 1.0,
+      "median_full_domain_accuracy": 1.0,
+      "n_parsed": 5,
+      "semantic_equivalence_rate": 1,
+      "semantic_equivalent_count": 5
+    },
+    "False Claim Only": {
+      "mean_full_domain_accuracy": 0.5146582950978025,
+      "median_full_domain_accuracy": 0.5027771069789906,
+      "n_parsed": 5,
+      "semantic_equivalence_rate": 0,
+      "semantic_equivalent_count": 0
+    },
+    "Full Reports - Provenance Masked": {
+      "mean_full_domain_accuracy": 0.8929244143926588,
+      "median_full_domain_accuracy": 0.9794735571118087,
+      "n_parsed": 5,
+      "semantic_equivalence_rate": 0,
+      "semantic_equivalent_count": 0
+    },
+    "Full Reports - Shuffled Provenance": {
+      "mean_full_domain_accuracy": 0.8929244143926588,
+      "median_full_domain_accuracy": 0.9794735571118087,
+      "n_parsed": 5,
+      "semantic_equivalence_rate": 0,
+      "semantic_equivalent_count": 0
+    },
+    "Full Reports - Valid Provenance": {
+      "mean_full_domain_accuracy": 0.8967882154069066,
+      "median_full_domain_accuracy": 0.9794735571118087,
+      "n_parsed": 5,
+      "semantic_equivalence_rate": 0.2,
+      "semantic_equivalent_count": 1
+    },
+    "No Archive": {
+      "mean_full_domain_accuracy": 0.7626177251871529,
+      "median_full_domain_accuracy": 0.6677131127746921,
+      "n_parsed": 5,
+      "semantic_equivalence_rate": 0,
+      "semantic_equivalent_count": 0
+    }
+  },
+  "error_count": 0,
+  "experiment": "The Commons v0.6 Source-Linkage Test",
+  "exploratory_engineering_pilot": true,
+  "generated_at": "2026-08-16T04:39:03.628682+00:00",
+  "generation_two_only": true,
+  "model": "gpt-5.6-luna",
+  "model_settings": {
+    "max_turns": 1,
+    "session": null,
+    "structured_output": "ChildRevision",
+    "temperature": "SDK/model default (not explicitly set)"
+  },
+  "optional_serialization_error_count": 0,
+  "optional_serialization_issues": [],
+  "paired_contrasts": {
+    "Masked minus False Claim Only": {
+      "condition_a": "Full Reports - Provenance Masked",
+      "condition_b": "False Claim Only",
+      "mean_full_domain_accuracy_difference": 0.3782661192948563,
+      "mean_semantic_equivalence_difference": 0,
+      "missing_worlds": [],
+      "n_paired_worlds": 5,
+      "world_accuracy_differences": [
+        0.40980439507365374,
+        0.5059164453030669,
+        0.07413668196087908,
+        0.47669645013281814,
+        0.42477662400386373
+      ],
+      "world_semantic_differences": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "Shuffled minus Masked": {
+      "condition_a": "Full Reports - Shuffled Provenance",
+      "condition_b": "Full Reports - Provenance Masked",
+      "mean_full_domain_accuracy_difference": 0.0,
+      "mean_semantic_equivalence_difference": 0,
+      "missing_worlds": [],
+      "n_paired_worlds": 5,
+      "world_accuracy_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_semantic_differences": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "Valid minus Masked": {
+      "condition_a": "Full Reports - Valid Provenance",
+      "condition_b": "Full Reports - Provenance Masked",
+      "mean_full_domain_accuracy_difference": 0.0038638010142477697,
+      "mean_semantic_equivalence_difference": 0.2,
+      "missing_worlds": [],
+      "n_paired_worlds": 5,
+      "world_accuracy_differences": [
+        0.0,
+        0.01931900507123885,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_semantic_differences": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    },
+    "Valid minus Shuffled": {
+      "condition_a": "Full Reports - Valid Provenance",
+      "condition_b": "Full Reports - Shuffled Provenance",
+      "mean_full_domain_accuracy_difference": 0.0038638010142477697,
+      "mean_semantic_equivalence_difference": 0.2,
+      "missing_worlds": [],
+      "n_paired_worlds": 5,
+      "world_accuracy_differences": [
+        0.0,
+        0.01931900507123885,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "world_semantic_differences": [
+        0,
+        1,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "parsed_count": 30,
+  "parsing_issues": [],
+  "phase": "five-world replacement engineering pilot",
+  "raw_record_count": 30,
+  "runtime_versions": {
+    "openai": "3.1.0",
+    "openai-agents": "0.21.0",
+    "pydantic": "2.13.4",
+    "python": "3.12.13",
+    "tiktoken": "0.13.0"
+  },
+  "trials": [
+    {
+      "archive_assessment": "not_applicable",
+      "condition": "No Archive",
+      "confidence": 0.98,
+      "formal_rule": "temperature <= 12 AND drel_density >= 35",
+      "full_domain_accuracy": 0.9843033083796184,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P01_C1",
+      "usage": {
+        "input_tokens": 546,
+        "output_tokens": 129,
+        "requests": 1,
+        "total_tokens": 675
+      },
+      "world_id": "P01"
+    },
+    {
+      "archive_assessment": "accepted",
+      "condition": "Correct Claim Only",
+      "confidence": 1.0,
+      "formal_rule": "temperature <= 12 AND drel_density >= 30",
+      "full_domain_accuracy": 1.0,
+      "semantic_equivalent": true,
+      "status": "parsed",
+      "trial_id": "P01_C2",
+      "usage": {
+        "input_tokens": 598,
+        "output_tokens": 132,
+        "requests": 1,
+        "total_tokens": 730
+      },
+      "world_id": "P01"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "False Claim Only",
+      "confidence": 0.99,
+      "formal_rule": "temperature <= 14 OR drel_density < 45",
+      "full_domain_accuracy": 0.5744989133059647,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P01_C3",
+      "usage": {
+        "input_tokens": 598,
+        "output_tokens": 198,
+        "requests": 1,
+        "total_tokens": 796
+      },
+      "world_id": "P01"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "Full Reports - Provenance Masked",
+      "confidence": 0.98,
+      "formal_rule": "temperature <= 12 AND drel_density >= 35",
+      "full_domain_accuracy": 0.9843033083796184,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P01_C4",
+      "usage": {
+        "input_tokens": 978,
+        "output_tokens": 227,
+        "requests": 1,
+        "total_tokens": 1205
+      },
+      "world_id": "P01"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "Full Reports - Valid Provenance",
+      "confidence": 0.97,
+      "formal_rule": "temperature <= 12 AND drel_density >= 35",
+      "full_domain_accuracy": 0.9843033083796184,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P01_C5",
+      "usage": {
+        "input_tokens": 978,
+        "output_tokens": 212,
+        "requests": 1,
+        "total_tokens": 1190
+      },
+      "world_id": "P01"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "Full Reports - Shuffled Provenance",
+      "confidence": 0.98,
+      "formal_rule": "temperature <= 12 AND drel_density >= 35",
+      "full_domain_accuracy": 0.9843033083796184,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P01_C6",
+      "usage": {
+        "input_tokens": 978,
+        "output_tokens": 197,
+        "requests": 1,
+        "total_tokens": 1175
+      },
+      "world_id": "P01"
+    },
+    {
+      "archive_assessment": "not_applicable",
+      "condition": "No Archive",
+      "confidence": 0.98,
+      "formal_rule": "temperature <= 15 AND drel_density <= 39",
+      "full_domain_accuracy": 0.6677131127746921,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P02_C1",
+      "usage": {
+        "input_tokens": 546,
+        "output_tokens": 190,
+        "requests": 1,
+        "total_tokens": 736
+      },
+      "world_id": "P02"
+    },
+    {
+      "archive_assessment": "accepted",
+      "condition": "Correct Claim Only",
+      "confidence": 0.99,
+      "formal_rule": "temperature <= 15 AND drel_density >= 25",
+      "full_domain_accuracy": 1.0,
+      "semantic_equivalent": true,
+      "status": "parsed",
+      "trial_id": "P02_C2",
+      "usage": {
+        "input_tokens": 598,
+        "output_tokens": 156,
+        "requests": 1,
+        "total_tokens": 754
+      },
+      "world_id": "P02"
+    },
+    {
+      "archive_assessment": "rejected",
+      "condition": "False Claim Only",
+      "confidence": 0.98,
+      "formal_rule": "temperature <= 15 OR drel_density >= 30",
+      "full_domain_accuracy": 0.47476454962569425,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P02_C3",
+      "usage": {
+        "input_tokens": 598,
+        "output_tokens": 169,
+        "requests": 1,
+        "total_tokens": 767
+      },
+      "world_id": "P02"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "Full Reports - Provenance Masked",
+      "confidence": 0.98,
+      "formal_rule": "temperature <= 15 AND drel_density >= 30",
+      "full_domain_accuracy": 0.9806809949287612,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P02_C4",
+      "usage": {
+        "input_tokens": 978,
+        "output_tokens": 220,
+        "requests": 1,
+        "total_tokens": 1198
+      },
+      "world_id": "P02"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "Full Reports - Valid Provenance",
+      "confidence": 0.98,
+      "formal_rule": "temperature <= 15 AND drel_density >= 25",
+      "full_domain_accuracy": 1.0,
+      "semantic_equivalent": true,
+      "status": "parsed",
+      "trial_id": "P02_C5",
+      "usage": {
+        "input_tokens": 978,
+        "output_tokens": 208,
+        "requests": 1,
+        "total_tokens": 1186
+      },
+      "world_id": "P02"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "Full Reports - Shuffled Provenance",
+      "confidence": 0.96,
+      "formal_rule": "temperature <= 15 AND drel_density >= 30",
+      "full_domain_accuracy": 0.9806809949287612,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P02_C6",
+      "usage": {
+        "input_tokens": 978,
+        "output_tokens": 194,
+        "requests": 1,
+        "total_tokens": 1172
+      },
+      "world_id": "P02"
+    },
+    {
+      "archive_assessment": "not_applicable",
+      "condition": "No Archive",
+      "confidence": 0.99,
+      "formal_rule": "temperature <= 23 AND drel_density >= 40",
+      "full_domain_accuracy": 0.9710214923931417,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P03_C1",
+      "usage": {
+        "input_tokens": 546,
+        "output_tokens": 164,
+        "requests": 1,
+        "total_tokens": 710
+      },
+      "world_id": "P03"
+    },
+    {
+      "archive_assessment": "accepted",
+      "condition": "Correct Claim Only",
+      "confidence": 1.0,
+      "formal_rule": "temperature <= 23 AND drel_density >= 35",
+      "full_domain_accuracy": 1.0,
+      "semantic_equivalent": true,
+      "status": "parsed",
+      "trial_id": "P03_C2",
+      "usage": {
+        "input_tokens": 598,
+        "output_tokens": 129,
+        "requests": 1,
+        "total_tokens": 727
+      },
+      "world_id": "P03"
+    },
+    {
+      "archive_assessment": "rejected",
+      "condition": "False Claim Only",
+      "confidence": 0.99,
+      "formal_rule": "temperature <= 23 AND drel_density < 45",
+      "full_domain_accuracy": 0.4725911615551799,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P03_C3",
+      "usage": {
+        "input_tokens": 598,
+        "output_tokens": 156,
+        "requests": 1,
+        "total_tokens": 754
+      },
+      "world_id": "P03"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "Full Reports - Provenance Masked",
+      "confidence": 0.97,
+      "formal_rule": "temperature <= 23 OR drel_density >= 40",
+      "full_domain_accuracy": 0.546727843516059,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P03_C4",
+      "usage": {
+        "input_tokens": 978,
+        "output_tokens": 221,
+        "requests": 1,
+        "total_tokens": 1199
+      },
+      "world_id": "P03"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "Full Reports - Valid Provenance",
+      "confidence": 0.98,
+      "formal_rule": "temperature <= 23 OR drel_density >= 40",
+      "full_domain_accuracy": 0.546727843516059,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P03_C5",
+      "usage": {
+        "input_tokens": 978,
+        "output_tokens": 232,
+        "requests": 1,
+        "total_tokens": 1210
+      },
+      "world_id": "P03"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "Full Reports - Shuffled Provenance",
+      "confidence": 0.98,
+      "formal_rule": "temperature <= 23 OR drel_density >= 40",
+      "full_domain_accuracy": 0.546727843516059,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P03_C6",
+      "usage": {
+        "input_tokens": 978,
+        "output_tokens": 203,
+        "requests": 1,
+        "total_tokens": 1181
+      },
+      "world_id": "P03"
+    },
+    {
+      "archive_assessment": "not_applicable",
+      "condition": "No Archive",
+      "confidence": 0.98,
+      "formal_rule": "temperature <= 16 AND drel_density <= 49",
+      "full_domain_accuracy": 0.6469451823231104,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P04_C1",
+      "usage": {
+        "input_tokens": 546,
+        "output_tokens": 162,
+        "requests": 1,
+        "total_tokens": 708
+      },
+      "world_id": "P04"
+    },
+    {
+      "archive_assessment": "accepted",
+      "condition": "Correct Claim Only",
+      "confidence": 0.99,
+      "formal_rule": "temperature <= 16 AND drel_density >= 35",
+      "full_domain_accuracy": 1.0,
+      "semantic_equivalent": true,
+      "status": "parsed",
+      "trial_id": "P04_C2",
+      "usage": {
+        "input_tokens": 598,
+        "output_tokens": 145,
+        "requests": 1,
+        "total_tokens": 743
+      },
+      "world_id": "P04"
+    },
+    {
+      "archive_assessment": "rejected",
+      "condition": "False Claim Only",
+      "confidence": 0.99,
+      "formal_rule": "temperature <= 16 OR drel_density >= 40",
+      "full_domain_accuracy": 0.5027771069789906,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P04_C3",
+      "usage": {
+        "input_tokens": 598,
+        "output_tokens": 170,
+        "requests": 1,
+        "total_tokens": 768
+      },
+      "world_id": "P04"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "Full Reports - Provenance Masked",
+      "confidence": 0.98,
+      "formal_rule": "temperature <= 16 AND drel_density >= 40",
+      "full_domain_accuracy": 0.9794735571118087,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P04_C4",
+      "usage": {
+        "input_tokens": 978,
+        "output_tokens": 194,
+        "requests": 1,
+        "total_tokens": 1172
+      },
+      "world_id": "P04"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "Full Reports - Valid Provenance",
+      "confidence": 0.99,
+      "formal_rule": "temperature <= 16 AND drel_density >= 40",
+      "full_domain_accuracy": 0.9794735571118087,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P04_C5",
+      "usage": {
+        "input_tokens": 978,
+        "output_tokens": 233,
+        "requests": 1,
+        "total_tokens": 1211
+      },
+      "world_id": "P04"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "Full Reports - Shuffled Provenance",
+      "confidence": 0.98,
+      "formal_rule": "temperature <= 16 AND drel_density >= 40",
+      "full_domain_accuracy": 0.9794735571118087,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P04_C6",
+      "usage": {
+        "input_tokens": 978,
+        "output_tokens": 184,
+        "requests": 1,
+        "total_tokens": 1162
+      },
+      "world_id": "P04"
+    },
+    {
+      "archive_assessment": "not_applicable",
+      "condition": "No Archive",
+      "confidence": 0.99,
+      "formal_rule": "temperature <= 21 AND drel_density <= 29",
+      "full_domain_accuracy": 0.5431055300652017,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P05_C1",
+      "usage": {
+        "input_tokens": 546,
+        "output_tokens": 136,
+        "requests": 1,
+        "total_tokens": 682
+      },
+      "world_id": "P05"
+    },
+    {
+      "archive_assessment": "accepted",
+      "condition": "Correct Claim Only",
+      "confidence": 0.99,
+      "formal_rule": "temperature <= 21 AND drel_density >= 15",
+      "full_domain_accuracy": 1.0,
+      "semantic_equivalent": true,
+      "status": "parsed",
+      "trial_id": "P05_C2",
+      "usage": {
+        "input_tokens": 598,
+        "output_tokens": 151,
+        "requests": 1,
+        "total_tokens": 749
+      },
+      "world_id": "P05"
+    },
+    {
+      "archive_assessment": "rejected",
+      "condition": "False Claim Only",
+      "confidence": 0.99,
+      "formal_rule": "temperature <= 21 OR drel_density >= 20",
+      "full_domain_accuracy": 0.5486597440231828,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P05_C3",
+      "usage": {
+        "input_tokens": 598,
+        "output_tokens": 149,
+        "requests": 1,
+        "total_tokens": 747
+      },
+      "world_id": "P05"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "Full Reports - Provenance Masked",
+      "confidence": 0.98,
+      "formal_rule": "temperature <= 21 AND drel_density >= 20",
+      "full_domain_accuracy": 0.9734363680270466,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P05_C4",
+      "usage": {
+        "input_tokens": 978,
+        "output_tokens": 206,
+        "requests": 1,
+        "total_tokens": 1184
+      },
+      "world_id": "P05"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "Full Reports - Valid Provenance",
+      "confidence": 0.97,
+      "formal_rule": "temperature <= 21 AND drel_density >= 20",
+      "full_domain_accuracy": 0.9734363680270466,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P05_C5",
+      "usage": {
+        "input_tokens": 978,
+        "output_tokens": 206,
+        "requests": 1,
+        "total_tokens": 1184
+      },
+      "world_id": "P05"
+    },
+    {
+      "archive_assessment": "revised",
+      "condition": "Full Reports - Shuffled Provenance",
+      "confidence": 0.98,
+      "formal_rule": "temperature <= 21 AND drel_density >= 20",
+      "full_domain_accuracy": 0.9734363680270466,
+      "semantic_equivalent": false,
+      "status": "parsed",
+      "trial_id": "P05_C6",
+      "usage": {
+        "input_tokens": 978,
+        "output_tokens": 194,
+        "requests": 1,
+        "total_tokens": 1172
+      },
+      "world_id": "P05"
+    }
+  ]
+}

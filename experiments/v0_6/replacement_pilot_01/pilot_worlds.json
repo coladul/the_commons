@@ -1,0 +1,141 @@
+{
+  "artifact_namespace": "experiments\\v0_6\\replacement_pilot_01",
+  "authorized_api_calls": 30,
+  "condition_count": 6,
+  "conditions": [
+    "No Archive",
+    "Correct Claim Only",
+    "False Claim Only",
+    "Full Reports - Provenance Masked",
+    "Full Reports - Valid Provenance",
+    "Full Reports - Shuffled Provenance"
+  ],
+  "core_conditions": [
+    "Full Reports - Provenance Masked",
+    "Full Reports - Valid Provenance",
+    "Full Reports - Shuffled Provenance"
+  ],
+  "created_at": "2026-08-16T04:35:06.447475+00:00",
+  "experiment": "The Commons v0.6 Source-Linkage Test",
+  "failed_pilot_aggregate_sha256": "1386b24511a787e1f95571dc7f4a073bee7248b1a52a20e19aa00c40fdae93f8",
+  "generation_count": 1,
+  "model": "gpt-5.6-luna",
+  "model_settings": {
+    "max_turns": 1,
+    "session": null,
+    "structured_output": "ChildRevision",
+    "temperature": "SDK/model default (not explicitly set)"
+  },
+  "phase": "five-world replacement engineering pilot",
+  "pilot_seed": 6020260815,
+  "replacement_for_failed_pilot": "experiments\\v0_6\\pilot",
+  "run_order": [
+    "P03_C5",
+    "P02_C1",
+    "P04_C6",
+    "P04_C3",
+    "P03_C2",
+    "P04_C2",
+    "P05_C6",
+    "P01_C1",
+    "P03_C6",
+    "P05_C3",
+    "P02_C6",
+    "P01_C5",
+    "P05_C5",
+    "P02_C4",
+    "P03_C4",
+    "P04_C1",
+    "P03_C3",
+    "P05_C1",
+    "P01_C3",
+    "P05_C4",
+    "P02_C2",
+    "P04_C5",
+    "P05_C2",
+    "P04_C4",
+    "P02_C5",
+    "P01_C2",
+    "P03_C1",
+    "P01_C4",
+    "P02_C3",
+    "P01_C6"
+  ],
+  "run_order_seed": 6020260816,
+  "runtime_versions": {
+    "openai": "3.1.0",
+    "openai-agents": "0.21.0",
+    "pydantic": "2.13.4",
+    "python": "3.12.13",
+    "tiktoken": "0.13.0"
+  },
+  "script_sha256": "b322803334c320120bcd7d587c1e4c142831a80e650e308cc02279d1f62a01e9",
+  "world_count": 5,
+  "worlds": [
+    {
+      "false_density": 45,
+      "false_temp": 14,
+      "max_hunt_temp": 12,
+      "min_hunt_density": 30,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "P01"
+    },
+    {
+      "false_density": 40,
+      "false_temp": 17,
+      "max_hunt_temp": 15,
+      "min_hunt_density": 25,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "P02"
+    },
+    {
+      "false_density": 50,
+      "false_temp": 25,
+      "max_hunt_temp": 23,
+      "min_hunt_density": 35,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "P03"
+    },
+    {
+      "false_density": 50,
+      "false_temp": 18,
+      "max_hunt_temp": 16,
+      "min_hunt_density": 35,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "P04"
+    },
+    {
+      "false_density": 30,
+      "false_temp": 23,
+      "max_hunt_temp": 21,
+      "min_hunt_density": 15,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "P05"
+    }
+  ]
+}

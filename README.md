@@ -36,6 +36,32 @@ v0.2 — Control experiment: Isolation, Inherited Commons, and Placebo Commons o
 v0.3 — Artificial-world transfer: Generation One agents inferred novel fictional ecological rules; fresh Generation Two agents were objectively tested. Inherited Commons agents averaged 89.5%, vs. 48.0% Isolation and 51.5% Placebo.
 v0.4 — Bad Ancestor: A false ancestral claim was experimentally preserved with or without its provenance. Children revised the record and grandchildren inherited only the children's revised entry.
 v0.5 — Replication: The v0.4 design was repeated across 10 different hidden worlds, with semantic-equivalence grading over 4,141 states per child and paired bootstrap comparisons.
+## v0.6 — Source-Linkage Test
+
+v0.6 was designed to separate the effect of provenance from the simpler benefit of receiving additional useful evidence.
+
+Across 30 frozen synthetic worlds and six paired conditions:
+
+- No Archive: 79.99% mean full-domain accuracy
+- Correct Claim Only: 100.00%
+- False Claim Only: 56.33%
+- Provenance Masked: 89.56%
+- Valid Provenance: 92.52%
+- Shuffled Provenance: 89.55%
+
+The preregistered Valid vs. Masked contrast was small and uncertain:
+
+- Exact semantic equivalence: +3.33 percentage points
+- Full-domain accuracy: +2.95 percentage points
+- Both bootstrap intervals included zero.
+
+The clearest result was that the additional source-report content substantially improved performance even without usable provenance linkage: Provenance Masked exceeded False Claim Only by 33.23 percentage points in mean full-domain accuracy.
+
+v0.6 therefore does not establish a clear independent benefit from correct source linkage beyond matched report content. It also does not establish that provenance has no effect; the direct provenance contrasts remain uncertain.
+
+Full design and results:
+- `docs/V0_6_SOURCE_LINKAGE_DESIGN.md`
+- `experiments/v0_6/main_30_world/main_report.md`
 A longer narrative is in docs/EXPERIMENT_HISTORY.md.
 
 Why provenance matters here

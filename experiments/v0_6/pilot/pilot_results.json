@@ -1,0 +1,685 @@
+{
+  "api_usage": {
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "requests": 0,
+    "total_tokens": 0
+  },
+  "authorized_api_calls": 30,
+  "condition_summaries": {
+    "Correct Claim Only": {
+      "mean_full_domain_accuracy": null,
+      "median_full_domain_accuracy": null,
+      "n_parsed": 0,
+      "semantic_equivalence_rate": null,
+      "semantic_equivalent_count": 0
+    },
+    "False Claim Only": {
+      "mean_full_domain_accuracy": null,
+      "median_full_domain_accuracy": null,
+      "n_parsed": 0,
+      "semantic_equivalence_rate": null,
+      "semantic_equivalent_count": 0
+    },
+    "Full Reports - Provenance Masked": {
+      "mean_full_domain_accuracy": null,
+      "median_full_domain_accuracy": null,
+      "n_parsed": 0,
+      "semantic_equivalence_rate": null,
+      "semantic_equivalent_count": 0
+    },
+    "Full Reports - Shuffled Provenance": {
+      "mean_full_domain_accuracy": null,
+      "median_full_domain_accuracy": null,
+      "n_parsed": 0,
+      "semantic_equivalence_rate": null,
+      "semantic_equivalent_count": 0
+    },
+    "Full Reports - Valid Provenance": {
+      "mean_full_domain_accuracy": null,
+      "median_full_domain_accuracy": null,
+      "n_parsed": 0,
+      "semantic_equivalence_rate": null,
+      "semantic_equivalent_count": 0
+    },
+    "No Archive": {
+      "mean_full_domain_accuracy": null,
+      "median_full_domain_accuracy": null,
+      "n_parsed": 0,
+      "semantic_equivalence_rate": null,
+      "semantic_equivalent_count": 0
+    }
+  },
+  "error_count": 30,
+  "experiment": "The Commons v0.6 Source-Linkage Test",
+  "exploratory_engineering_pilot": true,
+  "generated_at": "2026-08-16T04:23:08.934133+00:00",
+  "generation_two_only": true,
+  "model": "gpt-5.6-luna",
+  "model_settings": {
+    "max_turns": 1,
+    "session": null,
+    "structured_output": "ChildRevision",
+    "temperature": "SDK/model default (not explicitly set)"
+  },
+  "paired_contrasts": {
+    "Masked minus False Claim Only": {
+      "condition_a": "Full Reports - Provenance Masked",
+      "condition_b": "False Claim Only",
+      "mean_full_domain_accuracy_difference": null,
+      "mean_semantic_equivalence_difference": null,
+      "missing_worlds": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "n_paired_worlds": 0,
+      "world_accuracy_differences": [],
+      "world_semantic_differences": []
+    },
+    "Shuffled minus Masked": {
+      "condition_a": "Full Reports - Shuffled Provenance",
+      "condition_b": "Full Reports - Provenance Masked",
+      "mean_full_domain_accuracy_difference": null,
+      "mean_semantic_equivalence_difference": null,
+      "missing_worlds": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "n_paired_worlds": 0,
+      "world_accuracy_differences": [],
+      "world_semantic_differences": []
+    },
+    "Valid minus Masked": {
+      "condition_a": "Full Reports - Valid Provenance",
+      "condition_b": "Full Reports - Provenance Masked",
+      "mean_full_domain_accuracy_difference": null,
+      "mean_semantic_equivalence_difference": null,
+      "missing_worlds": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "n_paired_worlds": 0,
+      "world_accuracy_differences": [],
+      "world_semantic_differences": []
+    },
+    "Valid minus Shuffled": {
+      "condition_a": "Full Reports - Valid Provenance",
+      "condition_b": "Full Reports - Shuffled Provenance",
+      "mean_full_domain_accuracy_difference": null,
+      "mean_semantic_equivalence_difference": null,
+      "missing_worlds": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05"
+      ],
+      "n_paired_worlds": 0,
+      "world_accuracy_differences": [],
+      "world_semantic_differences": []
+    }
+  },
+  "parsed_count": 0,
+  "parsing_issues": [
+    {
+      "condition": "No Archive",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P01_C1"
+    },
+    {
+      "condition": "Correct Claim Only",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P01_C2"
+    },
+    {
+      "condition": "False Claim Only",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P01_C3"
+    },
+    {
+      "condition": "Full Reports - Provenance Masked",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P01_C4"
+    },
+    {
+      "condition": "Full Reports - Valid Provenance",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P01_C5"
+    },
+    {
+      "condition": "Full Reports - Shuffled Provenance",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P01_C6"
+    },
+    {
+      "condition": "No Archive",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P02_C1"
+    },
+    {
+      "condition": "Correct Claim Only",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P02_C2"
+    },
+    {
+      "condition": "False Claim Only",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P02_C3"
+    },
+    {
+      "condition": "Full Reports - Provenance Masked",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P02_C4"
+    },
+    {
+      "condition": "Full Reports - Valid Provenance",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P02_C5"
+    },
+    {
+      "condition": "Full Reports - Shuffled Provenance",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P02_C6"
+    },
+    {
+      "condition": "No Archive",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P03_C1"
+    },
+    {
+      "condition": "Correct Claim Only",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P03_C2"
+    },
+    {
+      "condition": "False Claim Only",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P03_C3"
+    },
+    {
+      "condition": "Full Reports - Provenance Masked",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P03_C4"
+    },
+    {
+      "condition": "Full Reports - Valid Provenance",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P03_C5"
+    },
+    {
+      "condition": "Full Reports - Shuffled Provenance",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P03_C6"
+    },
+    {
+      "condition": "No Archive",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P04_C1"
+    },
+    {
+      "condition": "Correct Claim Only",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P04_C2"
+    },
+    {
+      "condition": "False Claim Only",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P04_C3"
+    },
+    {
+      "condition": "Full Reports - Provenance Masked",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P04_C4"
+    },
+    {
+      "condition": "Full Reports - Valid Provenance",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P04_C5"
+    },
+    {
+      "condition": "Full Reports - Shuffled Provenance",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P04_C6"
+    },
+    {
+      "condition": "No Archive",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P05_C1"
+    },
+    {
+      "condition": "Correct Claim Only",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P05_C2"
+    },
+    {
+      "condition": "False Claim Only",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P05_C3"
+    },
+    {
+      "condition": "Full Reports - Provenance Masked",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P05_C4"
+    },
+    {
+      "condition": "Full Reports - Valid Provenance",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P05_C5"
+    },
+    {
+      "condition": "Full Reports - Shuffled Provenance",
+      "error": "BaseModel.model_dump() missing 1 required positional argument: 'self'",
+      "error_type": "TypeError",
+      "trial_id": "P05_C6"
+    }
+  ],
+  "phase": "five-world engineering pilot",
+  "raw_record_count": 30,
+  "runtime_versions": {
+    "openai": "3.1.0",
+    "openai-agents": "0.21.0",
+    "pydantic": "2.13.4",
+    "python": "3.12.13",
+    "tiktoken": "0.13.0"
+  },
+  "trials": [
+    {
+      "archive_assessment": null,
+      "condition": "No Archive",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P01_C1",
+      "usage": null,
+      "world_id": "P01"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Correct Claim Only",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P01_C2",
+      "usage": null,
+      "world_id": "P01"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "False Claim Only",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P01_C3",
+      "usage": null,
+      "world_id": "P01"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Full Reports - Provenance Masked",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P01_C4",
+      "usage": null,
+      "world_id": "P01"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Full Reports - Valid Provenance",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P01_C5",
+      "usage": null,
+      "world_id": "P01"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Full Reports - Shuffled Provenance",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P01_C6",
+      "usage": null,
+      "world_id": "P01"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "No Archive",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P02_C1",
+      "usage": null,
+      "world_id": "P02"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Correct Claim Only",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P02_C2",
+      "usage": null,
+      "world_id": "P02"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "False Claim Only",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P02_C3",
+      "usage": null,
+      "world_id": "P02"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Full Reports - Provenance Masked",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P02_C4",
+      "usage": null,
+      "world_id": "P02"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Full Reports - Valid Provenance",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P02_C5",
+      "usage": null,
+      "world_id": "P02"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Full Reports - Shuffled Provenance",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P02_C6",
+      "usage": null,
+      "world_id": "P02"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "No Archive",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P03_C1",
+      "usage": null,
+      "world_id": "P03"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Correct Claim Only",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P03_C2",
+      "usage": null,
+      "world_id": "P03"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "False Claim Only",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P03_C3",
+      "usage": null,
+      "world_id": "P03"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Full Reports - Provenance Masked",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P03_C4",
+      "usage": null,
+      "world_id": "P03"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Full Reports - Valid Provenance",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P03_C5",
+      "usage": null,
+      "world_id": "P03"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Full Reports - Shuffled Provenance",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P03_C6",
+      "usage": null,
+      "world_id": "P03"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "No Archive",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P04_C1",
+      "usage": null,
+      "world_id": "P04"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Correct Claim Only",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P04_C2",
+      "usage": null,
+      "world_id": "P04"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "False Claim Only",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P04_C3",
+      "usage": null,
+      "world_id": "P04"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Full Reports - Provenance Masked",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P04_C4",
+      "usage": null,
+      "world_id": "P04"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Full Reports - Valid Provenance",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P04_C5",
+      "usage": null,
+      "world_id": "P04"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Full Reports - Shuffled Provenance",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P04_C6",
+      "usage": null,
+      "world_id": "P04"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "No Archive",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P05_C1",
+      "usage": null,
+      "world_id": "P05"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Correct Claim Only",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P05_C2",
+      "usage": null,
+      "world_id": "P05"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "False Claim Only",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P05_C3",
+      "usage": null,
+      "world_id": "P05"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Full Reports - Provenance Masked",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P05_C4",
+      "usage": null,
+      "world_id": "P05"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Full Reports - Valid Provenance",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P05_C5",
+      "usage": null,
+      "world_id": "P05"
+    },
+    {
+      "archive_assessment": null,
+      "condition": "Full Reports - Shuffled Provenance",
+      "confidence": null,
+      "formal_rule": null,
+      "full_domain_accuracy": null,
+      "semantic_equivalent": null,
+      "status": "error",
+      "trial_id": "P05_C6",
+      "usage": null,
+      "world_id": "P05"
+    }
+  ]
+}

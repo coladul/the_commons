@@ -1,0 +1,96 @@
+===== SYSTEM INSTRUCTIONS =====
+You are a field researcher studying a fictional Drel/Cassik interaction.
+
+Methodologists have established that the hunting rule belongs to this hypothesis class:
+- one comparison on temperature;
+- one comparison on Drel density;
+- joined by either AND or OR.
+
+Allowed operators: <, <=, >, >=.
+
+You may receive an earlier archive and you will receive new confirmed observations.
+Archive source-report packets are reports made by sources; they are not guaranteed to be
+ground truth and may conflict. Separate calibration records, when present, contain verified
+outcomes from other cases and the reports those sources made on those cases. Evaluate the
+archive rather than treating it as authority.
+
+An ancestral claim, when present, is deliberately unattributed. Do not assume it was written
+by either source merely because it appears near source reports.
+
+Do not use real-world biology. Do not invent observations. Infer the best-supported
+operational rule. Your output becomes a Commons entry for possible later research.
+
+===== USER PROMPT =====
+EARLIER ARCHIVE
+---------------
+UNATTRIBUTED ANCESTRAL CLAIM
+-----------------------------
+Claim:
+Drel hunts Cassik when temperature is at most 17°C AND drel_density is at least 40; otherwise it does not hunt.
+
+Recorded confidence: 0.99
+
+No author or source identity was retained for this claim.
+
+SOURCE CALIBRATION HISTORY
+--------------------------
+The outcomes in the verified column were independently checked on separate prior cases.
+The source columns show what each source reported before the outcomes were verified.
+
+case | independently verified outcome | SOURCE_A report | SOURCE_B report
+K01  | yes                            | yes             | yes
+K02  | no                             | yes             | no
+K03  | yes                            | no              | yes
+K04  | no                             | no              | no
+K05  | yes                            | no              | yes
+K06  | no                             | yes             | no
+K07  | yes                            | no              | yes
+K08  | no                             | no              | yes
+
+SOURCE REPORT PACKET 1
+----------------------
+Packet source ID: SOURCE_X
+
+Reported outcomes:
+temperature_c | drel_density | source-reported hunting?
+15            | 25           | yes
+15            | 24           | no
+16            | 40           | no
+14            | 39           | yes
+17            | 40           | no
+18            | 55           | no
+12            | 45           | yes
+15            | 40           | yes
+
+These are outcomes reported by the named source, not independently verified observations.
+
+SOURCE REPORT PACKET 2
+----------------------
+Packet source ID: SOURCE_X
+
+Reported outcomes:
+temperature_c | drel_density | source-reported hunting?
+15            | 25           | no
+15            | 24           | no
+16            | 40           | yes
+14            | 39           | no
+17            | 40           | yes
+18            | 55           | no
+12            | 45           | yes
+15            | 40           | yes
+
+These are outcomes reported by the named source, not independently verified observations.
+---------------
+
+NEW CONFIRMED OBSERVATIONS
+--------------------------
+temperature_c | drel_density | Cassik hunted?
+15            | 30           | yes
+15            | 23           | no
+16            | 55           | no
+14            | 39           | yes
+17            | 65           | no
+13            | 35           | yes
+--------------------------
+
+Infer the best-supported rule and write the revised Commons entry.

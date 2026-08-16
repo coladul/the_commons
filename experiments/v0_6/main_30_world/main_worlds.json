@@ -1,0 +1,660 @@
+{
+  "artifact_namespace": "experiments\\v0_6\\main_30_world",
+  "assignment_seed": 6020260818,
+  "authorized_api_calls": 180,
+  "bootstrap": {
+    "base_seed": 6020260820,
+    "confidence_level": 0.95,
+    "interval_indexing": "v0.5 convention: [int(.025*B), int(.975*B)-1]",
+    "iterations": 5000,
+    "method": "paired nonparametric percentile bootstrap over worlds"
+  },
+  "condition_count": 6,
+  "conditions": [
+    "No Archive",
+    "Correct Claim Only",
+    "False Claim Only",
+    "Full Reports - Provenance Masked",
+    "Full Reports - Valid Provenance",
+    "Full Reports - Shuffled Provenance"
+  ],
+  "core_conditions": [
+    "Full Reports - Provenance Masked",
+    "Full Reports - Valid Provenance",
+    "Full Reports - Shuffled Provenance"
+  ],
+  "created_at": "2026-08-16T04:48:40.512853+00:00",
+  "design_source_sha256": "b322803334c320120bcd7d587c1e4c142831a80e650e308cc02279d1f62a01e9",
+  "experiment": "The Commons v0.6 Source-Linkage Test",
+  "exploratory_sample_size": true,
+  "generation_count": 1,
+  "main_world_seed": 6020260817,
+  "model": "gpt-5.6-luna",
+  "model_settings": {
+    "max_turns": 1,
+    "session": null,
+    "structured_output": "ChildRevision",
+    "temperature": "SDK/model default (not explicitly set)"
+  },
+  "phase": "30-world exploratory main run",
+  "preregistered_contrasts": [
+    {
+      "condition_a": "Full Reports - Valid Provenance",
+      "condition_b": "Full Reports - Provenance Masked",
+      "name": "Valid - Masked"
+    },
+    {
+      "condition_a": "Full Reports - Valid Provenance",
+      "condition_b": "Full Reports - Shuffled Provenance",
+      "name": "Valid - Shuffled"
+    },
+    {
+      "condition_a": "Full Reports - Provenance Masked",
+      "condition_b": "False Claim Only",
+      "name": "Masked - False Claim Only"
+    },
+    {
+      "condition_a": "Full Reports - Shuffled Provenance",
+      "condition_b": "Full Reports - Provenance Masked",
+      "name": "Shuffled - Masked"
+    },
+    {
+      "condition_a": "Correct Claim Only",
+      "condition_b": "No Archive",
+      "name": "Correct Claim Only - No Archive"
+    }
+  ],
+  "primary_endpoint": {
+    "definition": "Proposed rule matches ground truth across all 4,141 integer states.",
+    "name": "exact semantic equivalence"
+  },
+  "replacement_pilot_aggregate_sha256": "19d5678e7f1e76064adbf99fb943a0dcaac390242ae62fd98f1e9bf0ed93128f",
+  "run_order": [
+    "M03_C4",
+    "M17_C1",
+    "M29_C2",
+    "M15_C3",
+    "M27_C6",
+    "M12_C2",
+    "M06_C3",
+    "M16_C6",
+    "M02_C3",
+    "M18_C3",
+    "M03_C5",
+    "M08_C6",
+    "M09_C4",
+    "M24_C4",
+    "M07_C6",
+    "M05_C3",
+    "M11_C1",
+    "M05_C5",
+    "M28_C4",
+    "M04_C5",
+    "M01_C1",
+    "M01_C2",
+    "M23_C1",
+    "M26_C5",
+    "M13_C5",
+    "M08_C1",
+    "M16_C1",
+    "M03_C6",
+    "M11_C3",
+    "M17_C2",
+    "M19_C5",
+    "M04_C1",
+    "M12_C6",
+    "M22_C1",
+    "M26_C4",
+    "M17_C5",
+    "M26_C2",
+    "M10_C4",
+    "M25_C2",
+    "M24_C1",
+    "M21_C3",
+    "M07_C4",
+    "M07_C5",
+    "M06_C5",
+    "M21_C1",
+    "M26_C1",
+    "M11_C6",
+    "M09_C3",
+    "M19_C6",
+    "M11_C2",
+    "M25_C1",
+    "M14_C5",
+    "M25_C6",
+    "M08_C5",
+    "M02_C1",
+    "M13_C6",
+    "M09_C2",
+    "M20_C2",
+    "M26_C3",
+    "M24_C6",
+    "M07_C2",
+    "M12_C3",
+    "M30_C4",
+    "M23_C6",
+    "M26_C6",
+    "M24_C3",
+    "M15_C1",
+    "M29_C4",
+    "M23_C4",
+    "M08_C2",
+    "M17_C3",
+    "M22_C4",
+    "M24_C5",
+    "M30_C3",
+    "M02_C5",
+    "M29_C3",
+    "M15_C6",
+    "M02_C6",
+    "M21_C4",
+    "M15_C5",
+    "M28_C3",
+    "M19_C3",
+    "M01_C4",
+    "M16_C2",
+    "M12_C5",
+    "M12_C4",
+    "M08_C3",
+    "M09_C1",
+    "M18_C2",
+    "M21_C2",
+    "M18_C1",
+    "M04_C4",
+    "M27_C1",
+    "M28_C2",
+    "M05_C2",
+    "M27_C2",
+    "M07_C1",
+    "M06_C2",
+    "M12_C1",
+    "M22_C5",
+    "M05_C1",
+    "M27_C4",
+    "M05_C4",
+    "M25_C5",
+    "M28_C1",
+    "M10_C2",
+    "M14_C3",
+    "M30_C2",
+    "M20_C1",
+    "M09_C6",
+    "M17_C4",
+    "M30_C5",
+    "M23_C3",
+    "M27_C5",
+    "M30_C1",
+    "M14_C6",
+    "M16_C4",
+    "M13_C2",
+    "M27_C3",
+    "M15_C4",
+    "M20_C4",
+    "M08_C4",
+    "M19_C1",
+    "M22_C6",
+    "M20_C3",
+    "M14_C1",
+    "M14_C2",
+    "M11_C4",
+    "M01_C6",
+    "M14_C4",
+    "M04_C6",
+    "M01_C5",
+    "M09_C5",
+    "M13_C3",
+    "M02_C4",
+    "M25_C4",
+    "M22_C2",
+    "M23_C2",
+    "M29_C5",
+    "M21_C6",
+    "M13_C4",
+    "M22_C3",
+    "M10_C6",
+    "M23_C5",
+    "M11_C5",
+    "M28_C5",
+    "M10_C1",
+    "M03_C3",
+    "M25_C3",
+    "M04_C2",
+    "M29_C6",
+    "M01_C3",
+    "M17_C6",
+    "M07_C3",
+    "M20_C6",
+    "M13_C1",
+    "M18_C5",
+    "M05_C6",
+    "M19_C2",
+    "M30_C6",
+    "M20_C5",
+    "M18_C4",
+    "M16_C3",
+    "M21_C5",
+    "M03_C1",
+    "M10_C5",
+    "M06_C1",
+    "M04_C3",
+    "M18_C6",
+    "M16_C5",
+    "M03_C2",
+    "M19_C4",
+    "M28_C6",
+    "M29_C1",
+    "M10_C3",
+    "M24_C2",
+    "M15_C2",
+    "M06_C4",
+    "M02_C2",
+    "M06_C6"
+  ],
+  "run_order_seed": 6020260819,
+  "runtime_versions": {
+    "openai": "3.1.0",
+    "openai-agents": "0.21.0",
+    "pydantic": "2.13.4",
+    "python": "3.12.13",
+    "tiktoken": "0.13.0"
+  },
+  "script_sha256": "369fc37905c6a237882e9f1c4729b9f15dcabfd717c11bdd818895e72d87ef88",
+  "secondary_endpoint": {
+    "definition": "Fraction correct across all 4,141 integer states.",
+    "name": "full-domain accuracy"
+  },
+  "world_count": 30,
+  "worlds": [
+    {
+      "false_density": 55,
+      "false_temp": 14,
+      "max_hunt_temp": 12,
+      "min_hunt_density": 40,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "M01"
+    },
+    {
+      "false_density": 60,
+      "false_temp": 24,
+      "max_hunt_temp": 22,
+      "min_hunt_density": 45,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "M02"
+    },
+    {
+      "false_density": 40,
+      "false_temp": 26,
+      "max_hunt_temp": 24,
+      "min_hunt_density": 25,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "M03"
+    },
+    {
+      "false_density": 30,
+      "false_temp": 17,
+      "max_hunt_temp": 15,
+      "min_hunt_density": 15,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "M04"
+    },
+    {
+      "false_density": 60,
+      "false_temp": 22,
+      "max_hunt_temp": 20,
+      "min_hunt_density": 45,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "M05"
+    },
+    {
+      "false_density": 65,
+      "false_temp": 22,
+      "max_hunt_temp": 20,
+      "min_hunt_density": 50,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "M06"
+    },
+    {
+      "false_density": 65,
+      "false_temp": 26,
+      "max_hunt_temp": 24,
+      "min_hunt_density": 50,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "M07"
+    },
+    {
+      "false_density": 45,
+      "false_temp": 22,
+      "max_hunt_temp": 20,
+      "min_hunt_density": 30,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "M08"
+    },
+    {
+      "false_density": 40,
+      "false_temp": 18,
+      "max_hunt_temp": 16,
+      "min_hunt_density": 25,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "M09"
+    },
+    {
+      "false_density": 30,
+      "false_temp": 26,
+      "max_hunt_temp": 24,
+      "min_hunt_density": 15,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "M10"
+    },
+    {
+      "false_density": 35,
+      "false_temp": 22,
+      "max_hunt_temp": 20,
+      "min_hunt_density": 20,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "M11"
+    },
+    {
+      "false_density": 55,
+      "false_temp": 24,
+      "max_hunt_temp": 22,
+      "min_hunt_density": 40,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "M12"
+    },
+    {
+      "false_density": 45,
+      "false_temp": 24,
+      "max_hunt_temp": 22,
+      "min_hunt_density": 30,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "M13"
+    },
+    {
+      "false_density": 50,
+      "false_temp": 17,
+      "max_hunt_temp": 15,
+      "min_hunt_density": 35,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "M14"
+    },
+    {
+      "false_density": 50,
+      "false_temp": 23,
+      "max_hunt_temp": 21,
+      "min_hunt_density": 35,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "M15"
+    },
+    {
+      "false_density": 30,
+      "false_temp": 18,
+      "max_hunt_temp": 16,
+      "min_hunt_density": 15,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "M16"
+    },
+    {
+      "false_density": 40,
+      "false_temp": 22,
+      "max_hunt_temp": 20,
+      "min_hunt_density": 25,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "M17"
+    },
+    {
+      "false_density": 45,
+      "false_temp": 19,
+      "max_hunt_temp": 17,
+      "min_hunt_density": 30,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "M18"
+    },
+    {
+      "false_density": 60,
+      "false_temp": 15,
+      "max_hunt_temp": 13,
+      "min_hunt_density": 45,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "M19"
+    },
+    {
+      "false_density": 35,
+      "false_temp": 16,
+      "max_hunt_temp": 14,
+      "min_hunt_density": 20,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "M20"
+    },
+    {
+      "false_density": 60,
+      "false_temp": 17,
+      "max_hunt_temp": 15,
+      "min_hunt_density": 45,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "M21"
+    },
+    {
+      "false_density": 50,
+      "false_temp": 15,
+      "max_hunt_temp": 13,
+      "min_hunt_density": 35,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "M22"
+    },
+    {
+      "false_density": 60,
+      "false_temp": 14,
+      "max_hunt_temp": 12,
+      "min_hunt_density": 45,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "M23"
+    },
+    {
+      "false_density": 40,
+      "false_temp": 14,
+      "max_hunt_temp": 12,
+      "min_hunt_density": 25,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "M24"
+    },
+    {
+      "false_density": 30,
+      "false_temp": 22,
+      "max_hunt_temp": 20,
+      "min_hunt_density": 15,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "M25"
+    },
+    {
+      "false_density": 40,
+      "false_temp": 19,
+      "max_hunt_temp": 17,
+      "min_hunt_density": 25,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "M26"
+    },
+    {
+      "false_density": 60,
+      "false_temp": 23,
+      "max_hunt_temp": 21,
+      "min_hunt_density": 45,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_B",
+      "weaker_source": "SOURCE_A",
+      "world_id": "M27"
+    },
+    {
+      "false_density": 30,
+      "false_temp": 23,
+      "max_hunt_temp": 21,
+      "min_hunt_density": 15,
+      "packet_order": [
+        "false_rule_report",
+        "true_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "M28"
+    },
+    {
+      "false_density": 45,
+      "false_temp": 16,
+      "max_hunt_temp": 14,
+      "min_hunt_density": 30,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "M29"
+    },
+    {
+      "false_density": 45,
+      "false_temp": 25,
+      "max_hunt_temp": 23,
+      "min_hunt_density": 30,
+      "packet_order": [
+        "true_rule_report",
+        "false_rule_report"
+      ],
+      "reliable_source": "SOURCE_A",
+      "weaker_source": "SOURCE_B",
+      "world_id": "M30"
+    }
+  ]
+}

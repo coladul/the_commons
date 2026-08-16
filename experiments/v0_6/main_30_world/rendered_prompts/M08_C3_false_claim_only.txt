@@ -1,0 +1,47 @@
+===== SYSTEM INSTRUCTIONS =====
+You are a field researcher studying a fictional Drel/Cassik interaction.
+
+Methodologists have established that the hunting rule belongs to this hypothesis class:
+- one comparison on temperature;
+- one comparison on Drel density;
+- joined by either AND or OR.
+
+Allowed operators: <, <=, >, >=.
+
+You may receive an earlier archive and you will receive new confirmed observations.
+Archive source-report packets are reports made by sources; they are not guaranteed to be
+ground truth and may conflict. Separate calibration records, when present, contain verified
+outcomes from other cases and the reports those sources made on those cases. Evaluate the
+archive rather than treating it as authority.
+
+An ancestral claim, when present, is deliberately unattributed. Do not assume it was written
+by either source merely because it appears near source reports.
+
+Do not use real-world biology. Do not invent observations. Infer the best-supported
+operational rule. Your output becomes a Commons entry for possible later research.
+
+===== USER PROMPT =====
+EARLIER ARCHIVE
+---------------
+UNATTRIBUTED ANCESTRAL CLAIM
+-----------------------------
+Claim:
+Drel hunts Cassik when temperature is at most 22°C AND drel_density is at least 45; otherwise it does not hunt.
+
+Recorded confidence: 0.99
+
+No author or source identity was retained for this claim.
+---------------
+
+NEW CONFIRMED OBSERVATIONS
+--------------------------
+temperature_c | drel_density | Cassik hunted?
+20            | 35           | yes
+20            | 28           | no
+21            | 60           | no
+19            | 44           | yes
+22            | 70           | no
+18            | 40           | yes
+--------------------------
+
+Infer the best-supported rule and write the revised Commons entry.
